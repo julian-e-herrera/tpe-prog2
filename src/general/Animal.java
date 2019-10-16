@@ -8,6 +8,7 @@ public class Animal implements Hacienda{
 	private String raza;
 	private String sexo;
 	private boolean capado;
+	private boolean haParido;
 	
 	public String getNombre() {
 		return nombre;
@@ -37,7 +38,7 @@ public class Animal implements Hacienda{
 	public double getPeso() {//este es el q hereda
 		return peso;
 	}
-	public int cantidad() {//este es el q hereda
+	public int getCantidad() {//este es el q hereda
 		return 1;
 	}
 	public void setPeso(double peso) {
@@ -53,9 +54,21 @@ public class Animal implements Hacienda{
 		return capado;
 	}
 	public void setCapado(boolean capado) {
-		this.capado = capado;
+		if(sexo.toUpperCase().equals("MACHO")){
+			this.capado = capado;
+		}
+		else {
+			System.out.println("THROOOOOOW");
+		}
 	}
 	
-	
+	public void setHaParido(boolean haParido) {
+		if(sexo.toUpperCase().equals("HEMBRA")){
+			this.haParido = haParido;
+		}
+		else {
+			System.out.println("THROOOOOOW");
+		}
+	}
 
 }

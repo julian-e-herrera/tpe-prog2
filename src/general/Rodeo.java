@@ -23,16 +23,16 @@ public class Rodeo implements Hacienda {
 	}
 
 	@Override
-	public int cantidad() {
+	public int getCantidad() {
 		int suma = 0;
 		for (Hacienda a : animales) {
-			suma += a.cantidad();
+			suma += a.getCantidad();
 		}
 		return suma;
 	}
 	public double getEdad() {
-	 double result =0;
-	 for (Hacienda a : animales) {
+		double result =0;
+		for (Hacienda a : animales) {
 			result += a.getEdad();
 		}
 		if (animales.size() != 0) {
