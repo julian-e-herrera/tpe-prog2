@@ -25,17 +25,13 @@ public class Camion {
     
 	public void addAnimal(Animal a) {
 		for (Criterio c : condiciones) {
-			if(c.compare(a)&&(capacidad>=animales.size())){
+			if(c.compare(a)&&(capacidad>animales.size())){
 				animales.add(a);
 			}
 		}
 
 	}
 	
-
-//	public void setCapacidad(int capacidad) {dudo q sea necesario
-//		this.capacidad = capacidad;
-//	}
 
 	
 }

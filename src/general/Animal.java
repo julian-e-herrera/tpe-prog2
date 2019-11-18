@@ -53,22 +53,5 @@ public class Animal implements Hacienda{
 	public boolean isCapado() {
 		return capado;
 	}
-	public void setCapado(boolean capado) {
-		if(sexo.toUpperCase().equals("MACHO")){
-			this.capado = capado;
-		}
-		else {
-			System.out.println("THROOOOOOW");
-		}
-	}
-	
-	public void setHaParido(boolean haParido) {
-		if(sexo.toUpperCase().equals("HEMBRA")){
-			this.haParido = haParido;
-		}
-		else {
-			System.out.println("THROOOOOOW");
-		}
-	}
 
 }

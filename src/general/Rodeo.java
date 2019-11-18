@@ -15,6 +15,12 @@ public class Rodeo implements Hacienda {
 		for (Hacienda a : animales) {
 			suma += a.getPeso();
 		}
+		return suma;
+	}
+
+	public double getPesoPromedio() {
+		double suma = this.getPeso();
+
 		if (animales.size() != 0) {
 			return suma / animales.size();
 		} else {
@@ -30,8 +36,9 @@ public class Rodeo implements Hacienda {
 		}
 		return suma;
 	}
+
 	public double getEdad() {
-		double result =0;
+		double result = 0;
 		for (Hacienda a : animales) {
 			result += a.getEdad();
 		}
@@ -39,6 +46,13 @@ public class Rodeo implements Hacienda {
 			return result / animales.size();
 		} else {
 			return 0;
+		}
+	}
+	
+	public void llenarCamion (Camion camion) {
+		int sumar=0;
+		while((sumar < camion.getCapacidad())&&()) {
+			
 		}
 	}
 
